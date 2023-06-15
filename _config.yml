@@ -231,6 +231,7 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
   - jekyll-include-cache
+  - faraday-retry
 
 # Sitemap settings
 defaults:
