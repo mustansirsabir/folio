@@ -3,10 +3,12 @@ name: deploy
 on:
   push:
     branches:
-      - feature/al-folio/*
+      - master
+      - main
   pull_request:
     branches:
-      - feature/al-folio/*
+      - master
+      - main
   workflow_dispatch:
 
 permissions:
