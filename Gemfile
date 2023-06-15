@@ -19,9 +19,9 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
     gem 'jekyll-include-cache'
-    gem 'faraday-retry'
 end
 group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
+    gem 'faraday-retry'
 end
