@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - ng/master
+      - ng/feature/*
   workflow_dispatch:
 
 permissions:
@@ -22,6 +23,8 @@ jobs:
         cache: 'npm'
     - name: Install angular-cli 🔧
       run: npm install -g @angular/cli > /dev/null
+    - name: Install node packages 🔧
+      run: npm install
     - name: Build angular application 🔧
       run: ng build --prod --output-path=dist 
     - name: Deploy to gh-pages 🚀
