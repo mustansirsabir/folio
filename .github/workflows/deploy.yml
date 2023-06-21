@@ -20,7 +20,6 @@ jobs:
       with:
         node-version: 16.15.1
         cache: 'npm'
-        cache-dependency-path: subdir/package-lock.json
     - name: Install angular-cli 🔧
       run: npm install -g @angular/cli > /dev/null
     - name: Build angular application 🔧
