@@ -22,11 +22,11 @@ jobs:
         node-version: 16.15.1
         cache: 'npm'
     - name: Install angular-cli 🔧
-      run: npm install -g @angular/cli > /dev/null
+      run: npm install -g @angular/cli@14.0.0
     - name: Install node packages 🔧
       run: npm install
     - name: Build angular application 🔧
-      run: ng build --prod --output-path=dist 
+      run: ng build --output-path=dist 
     - name: Deploy to gh-pages 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
