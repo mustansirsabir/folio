@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - ng/master
-      - ng/feature/*
   workflow_dispatch:
 
 permissions:
